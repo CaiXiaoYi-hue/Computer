@@ -19,4 +19,12 @@ public class CalculatorTest {
         Assert.assertEquals(expectresult,cacuresult);
     }
 
+    @Test
+    public void shoulereturn2whenonemultione() throws IllegalAccessException, ClassNotFoundException, InstantiationException {
+        Calculator calculator = new Calculator();
+        int cacuresult = calculator.compute(1,1,"Multi");
+        int expectresult = 1;
+        Assert.assertEquals(expectresult,cacuresult);
+    }
+
 }
